@@ -1,6 +1,6 @@
 # Line Following Robot
 
-Watch a video of our robot driving here: https://drive.google.com/file/d/1h1z37_4ApMbzy6rev-UAbiNf0mm2aX4u/view?usp=sharing
+Watch a video of our robot driving here: https://www.youtube.com/watch?v=u9c1FusY-bc
 
 ## Files
 
