@@ -1,0 +1,27 @@
+common@common-vb:~/Desktop/CPMR3/ros2_ws$ sudo apt install python3-pip
+common@common-vb:~/Desktop/CPMR3/ros2_ws$ python3 -m pip install tensorflow
+common@common-vb:~/Desktop/CPMR3/ros2_ws/src/cpmr_ch6/src$ pip install scikit-learn
+
+colcon build
+
+common@common-vb:~/Desktop/CPMR3/ros2_ws$ python3 src/cpmr_ch6/src/line-follower.py
+common@common-vb:~/Desktop/CPMR3/ros2_ws/src/cpmr_ch6/src$ python3 line-follower-test.py
+
+
+
+
+
+
+
+common@common-vb:~/Desktop/CPMR3/ros2_ws/src/cpmr_ch6/src$ python3 line-follower-test.py
+common@common-vb:~$ source /opt/ros/humble/setup.bash
+common@common-vb:~$ cd CPMR3/ros2_ws 
+common@common-vb:~/CPMR3/ros2_ws$ colcon build
+common@common-vb:~/CPMR3/ros2_ws$ source install/setup.bash
+
+common@common-vb:~/CPMR3/ros2_ws$ echo $GAZEBO_MODEL_PATH /usr/share/gazebo-11/models
+/usr/share/gazebo-11/models
+
+common@common-vb:~/CPMR3/ros2_ws$ export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:/home/common/Desktop/CPMR3/ros2_ws/src/cpmr_ch6/gazebo
+
+common@common-vb:~/Desktop/CPMR3/ros2_ws$ ros2 launch cpmr_ch6 auto_drive_by_line.launch.py
